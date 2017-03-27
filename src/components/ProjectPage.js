@@ -14,7 +14,7 @@ export default class ProjectPage extends React.Component {
     }
     const headerStyle = { backgroundColor: 'grey' };
     return (
-      <div>
+      <div className="container" style={{marginTop:'20px'}}>
         <ProjectsMenu projects={projects}/>
         <div>
           <header style={headerStyle}/>
@@ -29,7 +29,7 @@ export default class ProjectPage extends React.Component {
           </section>
         </div>
         <div>
-          <Link to="/">« Back to the index</Link>
+          <Link to="/projects/">« Back to the index</Link>
         </div>
       </div>
     );

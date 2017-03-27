@@ -12,12 +12,12 @@ export default class Footer extends React.Component {
           <span className="fa fa-copyright" aria-hidden="true"></span> Lagnesh Thakur | {new Date().getFullYear()}
         </div>
         <div className="col-xs-2 col-md-1 col-md-offset-5">
-          <a href="#footer">
+          <a href="https://github.com/lagneshthakur">
             <i className="fa fa-github"></i>
           </a>
         </div>
         <div className="col-xs-2 col-md-1">
-          <a href="#footer">
+          <a href="https://linkedin.com/in/lagneshthakur">
             <i className="fa fa-linkedin"></i>
           </a>
         </div>

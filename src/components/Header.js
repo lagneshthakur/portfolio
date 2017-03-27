@@ -5,7 +5,6 @@ export default class Header extends React.Component {
   handleClick(e){
     document.getElementsByClassName('active')[0].className = '';
     document.getElementById(e.target.id).parentElement.className = 'active';
-    console.log("Click Handled");
   }
   render() {
     return (
@@ -25,7 +24,7 @@ export default class Header extends React.Component {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className="active"><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link4"><span className="glyphicon"></span></Link></li>
-              <li><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link1">Projects</Link></li>
+              <li><Link to={'/projects/'} className="headerLinks" onClick={this.handleClick} id="link1">Projects</Link></li>
               <li><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link2">About Me</Link></li>
               <li><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link3"><span className="glyphicon"></span></Link></li>
             </ul>
