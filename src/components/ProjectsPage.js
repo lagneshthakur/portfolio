@@ -7,11 +7,11 @@ export default class ProjectsPage extends React.Component {
 
   render() {
     return (
-      <div className="container" style={{marginTop:'20px'}}>
-        <div>
-          {projects.map(projectData => <ProjectPreview key={projectData.id} {...projectData} />)}
-        </div>
-      </div>
+    	<div className="container-fluid" style={{marginBottom: '25px'}}>
+	      <div className="row">
+	          {projects.map(projectData => <ProjectPreview key={projectData.id} {...projectData} />)}
+	      </div>
+    	</div>
     );
   }
 }

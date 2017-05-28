@@ -15,7 +15,7 @@ export default class ProjectPage extends React.Component {
     const headerStyle = { backgroundColor: 'grey' };
     return (
       <div className="container" style={{marginTop:'20px'}}>
-        <ProjectsMenu projects={projects}/>
+        <ProjectsMenu projects={projects} active={id}/>
         <div>
           <header style={headerStyle}/>
           <div>

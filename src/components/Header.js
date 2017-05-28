@@ -25,7 +25,7 @@ export default class Header extends React.Component {
             <ul className="nav navbar-nav navbar-right">
               <li className="active"><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link4"><span className="glyphicon"></span></Link></li>
               <li><Link to={'/projects/'} className="headerLinks" onClick={this.handleClick} id="link1">Projects</Link></li>
-              <li><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link2">About Me</Link></li>
+              <li><Link to={'/aboutme/'} className="headerLinks" onClick={this.handleClick} id="link2">About Me</Link></li>
               <li><Link to={'#'} className="headerLinks" onClick={this.handleClick} id="link3"><span className="glyphicon"></span></Link></li>
             </ul>
           </div>

@@ -6,11 +6,24 @@ export default class ProjectsMenu extends React.Component {
   render() {
     return (
       <nav>
-        {this.props.projects.map(menuProject => {
-          return <Link key={menuProject.id} to={`/project/${menuProject.id}`} activeClassName="active">
-            {menuProject.name}
-          </Link>;
-        })}
+        <ul className="nav nav-tabs">
+          {this.props.projects.map(menuProject => {
+              if(this.props.active == menuProject.id){
+                return <li role="presentation" className="active">
+                  <Link key={menuProject.id} to={`/project/${menuProject.id}`}>
+                    {menuProject.name}
+                  </Link>
+                </li>;
+              }
+              else{
+                return <li role="presentation">
+                  <Link key={menuProject.id} to={`/project/${menuProject.id}`}>
+                    {menuProject.name}
+                  </Link>
+                </li>; 
+              }
+          })}
+        </ul>
       </nav>
     );
   }

@@ -1,20 +1,7 @@
 // src/components/IndexPage.js
 import React from 'react';
-import Moon from './IndexComponents/Moon';
-import Flowers from './IndexComponents/Flowers';
-import Mountains from './IndexComponents/Mountains';
+import ParallaxDiv from './IndexComponents/ParallaxDiv';
 
-var styles = {
-  headingStyle:{
-    fontFamily: 'cursive',
-    display: 'inline-block',
-    fontWeight: 900,
-    fontSize: '4em',
-    margin: '0.3em',
-    position: 'relative',
-    zIndex: 1,
-  }
-}
 export default class IndexPage extends React.Component {
   constructor(){
     super();
@@ -25,21 +12,23 @@ export default class IndexPage extends React.Component {
         <div>
           <div className='col-xs-12 col-md-offset-1 col-md-6' style={{color: 'rgb(69, 125, 176)'}}>
               <div className='hidden-xs' style={{marginTop: '150px'}}>
-                <p style={styles.headingStyle}> Hi!</p>
-                <p style={styles.headingStyle}> I am Lagnesh Thakur </p>
+                <p className="indexWelcome"> Hi!</p>
+                <p className="indexWelcome"> I am Lagnesh Thakur </p>
+                <pre> And I am UNDERCONSTRUCTION </pre>
               </div>
               <div className='hidden-sm hidden-md hidden-lg'>
-                <p style={styles.headingStyle}> Lagnesh </p>
-                <p style={styles.headingStyle}> Thakur </p>
+              <p className="indexWelcome"> Hi!</p>
+              <br/>
+              <p className="indexWelcome"> I am Lagnesh</p>
               </div>
           </div>
           <div className='col-xs-offset-3 col-xs-7 col-md-offset-1 col-md-3'>
             <img className='img-responsive' src="/image/ME1.jpg" /><br/>
           </div>
         </div>
-        <Moon/>
-        <Flowers/>
-        <Mountains/>
+        <ParallaxDiv image='url(/image/moon.jpg)' heading= 'Be like the moon' text= 'Full of imperfections still reflecting only light' />
+        <ParallaxDiv image='url(/image/plants.jpg)' heading= 'Be like the flowers' text= 'And spread your fragnance' />
+        <ParallaxDiv image='url(/image/mountains.jpg)' heading= 'Be like the mountains' text= 'Stand tall' />
       </div>
     );
   }
